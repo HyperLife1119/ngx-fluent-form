@@ -54,9 +54,9 @@
         .tips({
           error: 'Please enter your password!'
         }),
-    ),
+    );
 
     model = {};
   }
 `;function _createMdxContent(props){const _components=Object.assign({h1:"h1"},(0,dist_esm.ah)(),props.components);return(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(0,jsx_runtime.jsx)(esm.h_,{title:"FluentForm/Advanced",component:fluent_form.$.component,decorators:fluent_form.$.decorators,argTypes:fluent_form.$.argTypes,parameters:fluent_form.$.parameters}),"\n",(0,jsx_runtime.jsx)(_components.h1,{children:"Form Validation"}),"\n",(0,jsx_runtime.jsx)(esm.Xz,{withToolbar:!0,mdxSource:source,children:(0,jsx_runtime.jsx)(esm.oG,{name:"Form Validation",children:story})}),"\n",(0,jsx_runtime.jsx)(esm.$4,{of:src.gA})]})}function MDXContent(props={}){const{wrapper:MDXLayout}=Object.assign({},(0,dist_esm.ah)(),props.components);return MDXLayout?(0,jsx_runtime.jsx)(MDXLayout,Object.assign({},props,{children:(0,jsx_runtime.jsx)(_createMdxContent,props)})):_createMdxContent(props)}const formValidation=(0,esm.Xb)(story);formValidation.storyName="Form Validation",formValidation.parameters={storySource:{source:"story"}};const componentMeta={title:"FluentForm/Advanced",parameters:fluent_form.$.parameters,decorators:fluent_form.$.decorators,component:fluent_form.$.component,argTypes:fluent_form.$.argTypes,includeStories:["formValidation"]},mdxStoryNameToKey={"Form Validation":"formValidation"};componentMeta.parameters=componentMeta.parameters||{},componentMeta.parameters.docs={...componentMeta.parameters.docs||{},page:()=>react.createElement(esm.aT,{mdxStoryNameToKey,mdxComponentAnnotations:componentMeta},react.createElement(MDXContent,null))};const index_story=componentMeta,__namedExportsOrder=["formValidation"]},"./stories/fluent-form/index.ts.css?ngResource!=!./node_modules/@ngtools/webpack/src/loaders/inline-resource.js?data=CiAgICBwcmUgeyBwYWRkaW5nOiA1cHg7IGJhY2tncm91bmQ6ICNmNWY1ZjU7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTAgfQogIA%3D%3D!./stories/fluent-form/index.ts":module=>{module.exports="\n    pre { padding: 5px; background: #f5f5f5; border: 1px solid #e0e0e0 }\n  "}}]);
-//# sourceMappingURL=fluent-form-advanced-form-validation-index-story-mdx.2d9348d0.iframe.bundle.js.map
+//# sourceMappingURL=fluent-form-advanced-form-validation-index-story-mdx.c45e4bdc.iframe.bundle.js.map
