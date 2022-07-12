@@ -7,9 +7,9 @@
     ]
   })
   export class YourModule { }
-`},"./stories/fluent-form/basic/input-group/index.story.mdx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{__namedExportsOrder:()=>__namedExportsOrder,default:()=>index_story,inputGroup:()=>inputGroup});var react=__webpack_require__("./node_modules/react/index.js"),esm=__webpack_require__("./node_modules/@storybook/addon-docs/dist/esm/index.js"),jsx_runtime=__webpack_require__("./node_modules/react/jsx-runtime.js"),dist_esm=__webpack_require__("./node_modules/@mdx-js/react/dist/esm.js"),fluent_form=__webpack_require__("./stories/fluent-form/index.ts"),src=__webpack_require__("./projects/ngx-fluent-form/src/index.ts"),storybook=__webpack_require__("./stories/storybook.ts"),ts_dedent_esm=__webpack_require__("./node_modules/ts-dedent/esm/index.js");const story=(0,storybook.LS)({args:{schemas:(0,src.cr)((0,src.d7)().label("姓与名称").span(8).schemas((0,src.qH)("first").placeholder("姓").span(8),(0,src.qH)("last").placeholder("名").span(16)),(0,src.d7)().label("个人信息").span(8).schemas((0,src.qH)("name").placeholder("姓名").span(15),(0,src.Rx)("age").placeholder("年龄").min(1).max(100).span(9))),model:{}}}),source=ts_dedent_esm.default`
+`},"./stories/fluent-form/basic/input-group/index.story.mdx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{__namedExportsOrder:()=>__namedExportsOrder,default:()=>index_story,inputGroup:()=>inputGroup});var react=__webpack_require__("./node_modules/react/index.js"),esm=__webpack_require__("./node_modules/@storybook/addon-docs/dist/esm/index.js"),jsx_runtime=__webpack_require__("./node_modules/react/jsx-runtime.js"),dist_esm=__webpack_require__("./node_modules/@mdx-js/react/dist/esm.js"),fluent_form=__webpack_require__("./stories/fluent-form/index.ts"),src=__webpack_require__("./projects/ngx-fluent-form/src/index.ts"),storybook=__webpack_require__("./stories/storybook.ts"),ts_dedent_esm=__webpack_require__("./node_modules/ts-dedent/esm/index.js");const story=(0,storybook.LS)({args:{schemas:(0,src.cr)((0,src.d7)().label("姓与名称").span(8).schemas((0,src.qH)("first").placeholder("姓").span(8),(0,src.qH)("last").placeholder("名").span(16)),(0,src.d7)().label("个人信息").span(8).schemas((0,src.qH)("name").placeholder("姓名").span(15),(0,src.Rx)("age").placeholder("年龄").min(1).max(100).span(9)),(0,src.d7)().span(10).schemas((0,src.qH)("keyword").subtype("search").placeholder("请输入搜索关键字").span(18),(0,src.LI)().subtype("primary").content("提交").flex("auto"))),model:{}}}),source=ts_dedent_esm.default`
   import { Component } from '@angular/core';
-  import { form, input, inputGroup, number } from 'ngx-fluent-form';
+  import { button, form, input, inputGroup, number } from 'ngx-fluent-form';
 
   @Component({
     selector: 'example-component',
@@ -24,10 +24,14 @@
       inputGroup().label('个人信息').span(8).schemas(
         input('name').placeholder('姓名').span(15),
         number('age').placeholder('年龄').min(1).max(100).span(9),
+      ),
+      inputGroup().span(10).schemas(
+        input('keyword').subtype('search').placeholder('请输入搜索关键字').span(18),
+        button().subtype('primary').content('提交').flex('auto'),
       )
     );
 
     model = {};
   }
 `;function _createMdxContent(props){const _components=Object.assign({h1:"h1"},(0,dist_esm.ah)(),props.components);return(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(0,jsx_runtime.jsx)(esm.h_,{title:"FluentForm/Basic",component:fluent_form.$.component,decorators:fluent_form.$.decorators,argTypes:fluent_form.$.argTypes,parameters:fluent_form.$.parameters}),"\n",(0,jsx_runtime.jsx)(_components.h1,{children:"Input Group"}),"\n",(0,jsx_runtime.jsx)(esm.Xz,{withToolbar:!0,mdxSource:source,children:(0,jsx_runtime.jsx)(esm.oG,{name:"Input Group",children:story})}),"\n",(0,jsx_runtime.jsx)(esm.$4,{of:src.gA})]})}function MDXContent(props={}){const{wrapper:MDXLayout}=Object.assign({},(0,dist_esm.ah)(),props.components);return MDXLayout?(0,jsx_runtime.jsx)(MDXLayout,Object.assign({},props,{children:(0,jsx_runtime.jsx)(_createMdxContent,props)})):_createMdxContent(props)}const inputGroup=(0,esm.Xb)(story);inputGroup.storyName="Input Group",inputGroup.parameters={storySource:{source:"story"}};const componentMeta={title:"FluentForm/Basic",parameters:fluent_form.$.parameters,decorators:fluent_form.$.decorators,component:fluent_form.$.component,argTypes:fluent_form.$.argTypes,includeStories:["inputGroup"]},mdxStoryNameToKey={"Input Group":"inputGroup"};componentMeta.parameters=componentMeta.parameters||{},componentMeta.parameters.docs={...componentMeta.parameters.docs||{},page:()=>react.createElement(esm.aT,{mdxStoryNameToKey,mdxComponentAnnotations:componentMeta},react.createElement(MDXContent,null))};const index_story=componentMeta,__namedExportsOrder=["inputGroup"]},"./stories/fluent-form/index.ts.css?ngResource!=!./node_modules/@ngtools/webpack/src/loaders/inline-resource.js?data=CiAgICBwcmUgeyBwYWRkaW5nOiA1cHg7IGJhY2tncm91bmQ6ICNmNWY1ZjU7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTAgfQogIA%3D%3D!./stories/fluent-form/index.ts":module=>{module.exports="\n    pre { padding: 5px; background: #f5f5f5; border: 1px solid #e0e0e0 }\n  "}}]);
-//# sourceMappingURL=fluent-form-basic-input-group-index-story-mdx.96fe8503.iframe.bundle.js.map
+//# sourceMappingURL=fluent-form-basic-input-group-index-story-mdx.c7075d93.iframe.bundle.js.map
