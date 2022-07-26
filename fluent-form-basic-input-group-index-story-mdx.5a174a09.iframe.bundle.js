@@ -48,8 +48,8 @@
         input('keyword').subtype('search').placeholder('请输入搜索关键字').span(18),
         button().subtype('primary').content('提交').flex('auto'),
       ),
-      inputGroup().span(8).before({ template: '@' }).schemas(
-        input('at').placeholder('请输入搜索'),
+      inputGroup().span(6).before('@').schemas(
+        input('at').placeholder('请输入'),
       ),
       inputGroup().span(8).suffix({ icon: 'info-circle' }).schemas(
         input('info').placeholder('图标后缀'),
@@ -59,4 +59,4 @@
     model = {};
   }
 `;function _createMdxContent(props){const _components=Object.assign({h1:"h1",p:"p",ul:"ul",li:"li"},(0,dist_esm.ah)(),props.components);return(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(0,jsx_runtime.jsx)(esm.h_,{title:"FluentForm/Basic",component:fluent_form.$y.component,decorators:fluent_form.$y.decorators,argTypes:fluent_form.$y.argTypes,parameters:fluent_form.$y.parameters}),"\n",(0,jsx_runtime.jsx)(_components.h1,{children:"Input Group - 输入框组合"}),"\n",(0,jsx_runtime.jsx)(_components.p,{children:"输入框组合通常用于配置一些固定组合或增强当前输入框："}),"\n",(0,jsx_runtime.jsxs)(_components.ul,{children:["\n",(0,jsx_runtime.jsx)(_components.li,{children:"增强输入框，为其添加前后缀/标签。"}),"\n",(0,jsx_runtime.jsx)(_components.li,{children:"将多个输入框或将输入框与按钮组合起来。"}),"\n"]}),"\n",(0,jsx_runtime.jsx)(esm.Xz,{withToolbar:!0,isExpanded:!0,mdxSource:source,children:(0,jsx_runtime.jsx)(esm.oG,{name:"Input Group",children:story})}),"\n",(0,jsx_runtime.jsx)(esm.$4,{of:src.gA})]})}function MDXContent(props={}){const{wrapper:MDXLayout}=Object.assign({},(0,dist_esm.ah)(),props.components);return MDXLayout?(0,jsx_runtime.jsx)(MDXLayout,Object.assign({},props,{children:(0,jsx_runtime.jsx)(_createMdxContent,props)})):_createMdxContent(props)}const inputGroup=(0,esm.Xb)(story);inputGroup.storyName="Input Group",inputGroup.parameters={storySource:{source:"story"}};const componentMeta={title:"FluentForm/Basic",parameters:fluent_form.$y.parameters,decorators:fluent_form.$y.decorators,component:fluent_form.$y.component,argTypes:fluent_form.$y.argTypes,includeStories:["inputGroup"]},mdxStoryNameToKey={"Input Group":"inputGroup"};componentMeta.parameters=componentMeta.parameters||{},componentMeta.parameters.docs={...componentMeta.parameters.docs||{},page:()=>react.createElement(esm.aT,{mdxStoryNameToKey,mdxComponentAnnotations:componentMeta},react.createElement(MDXContent,null))};const index_story=componentMeta,__namedExportsOrder=["inputGroup"]},"./stories/fluent-form/index.ts.css?ngResource!=!./node_modules/@ngtools/webpack/src/loaders/inline-resource.js?data=CiAgICBwcmUgeyBwYWRkaW5nOiA1cHg7IGJhY2tncm91bmQ6ICNmNWY1ZjU7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTAgfQogIA%3D%3D!./stories/fluent-form/index.ts":module=>{module.exports="\n    pre { padding: 5px; background: #f5f5f5; border: 1px solid #e0e0e0 }\n  "}}]);
-//# sourceMappingURL=fluent-form-basic-input-group-index-story-mdx.b33560cc.iframe.bundle.js.map
+//# sourceMappingURL=fluent-form-basic-input-group-index-story-mdx.5a174a09.iframe.bundle.js.map
