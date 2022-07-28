@@ -49,12 +49,12 @@
           group('step3').span(24).schemas(
             textarea('textareaInStep3').label('文本域').span(24),
           ),
-          button().subtype('primary').content('提交').block(true).span(24)
+          button().subtype('submit').subtype('primary').content('提交').block(true).span(24)
         )
       )
     );
 
-    model = { date: '2022/2/22' };
+    model = {};
   }
 `;function _createMdxContent(props){const _components=Object.assign({h1:"h1",p:"p",code:"code"},(0,dist_esm.ah)(),props.components);return(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(0,jsx_runtime.jsx)(esm.h_,{title:"FluentForm/Basic",component:fluent_form.$y.component,decorators:fluent_form.$y.decorators,argTypes:fluent_form.$y.argTypes,parameters:fluent_form.$y.parameters}),"\n",(0,jsx_runtime.jsx)(_components.h1,{children:"Step-by-Step Form - 分步表单"}),"\n",(0,jsx_runtime.jsxs)(_components.p,{children:["如果表单控件数量繁多，我们可能希望将表单拆分为几个步骤以改善用户体验，这时候可以组合使用 ",(0,jsx_runtime.jsx)(_components.code,{children:"steps"})," 和 ",(0,jsx_runtime.jsx)(_components.code,{children:"step"})," 组件来构建分步表单："]}),"\n",(0,jsx_runtime.jsx)(esm.Xz,{withToolbar:!0,isExpanded:!0,mdxSource:source,children:(0,jsx_runtime.jsx)(esm.oG,{name:"Step-by-Step Form",children:story})})]})}function MDXContent(props={}){const{wrapper:MDXLayout}=Object.assign({},(0,dist_esm.ah)(),props.components);return MDXLayout?(0,jsx_runtime.jsx)(MDXLayout,Object.assign({},props,{children:(0,jsx_runtime.jsx)(_createMdxContent,props)})):_createMdxContent(props)}const stepByStepForm=(0,esm.Xb)(story);stepByStepForm.storyName="Step-by-Step Form",stepByStepForm.parameters={storySource:{source:"story"}};const componentMeta={title:"FluentForm/Basic",parameters:fluent_form.$y.parameters,decorators:fluent_form.$y.decorators,component:fluent_form.$y.component,argTypes:fluent_form.$y.argTypes,includeStories:["stepByStepForm"]},mdxStoryNameToKey={"Step-by-Step Form":"stepByStepForm"};componentMeta.parameters=componentMeta.parameters||{},componentMeta.parameters.docs={...componentMeta.parameters.docs||{},page:()=>react.createElement(esm.aT,{mdxStoryNameToKey,mdxComponentAnnotations:componentMeta},react.createElement(MDXContent,null))};const index_story=componentMeta,__namedExportsOrder=["stepByStepForm"]},"./stories/fluent-form/index.ts.css?ngResource!=!./node_modules/@ngtools/webpack/src/loaders/inline-resource.js?data=CiAgICBwcmUgeyBwYWRkaW5nOiA1cHg7IGJhY2tncm91bmQ6ICNmNWY1ZjU7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTAgfQogIA%3D%3D!./stories/fluent-form/index.ts":module=>{module.exports="\n    pre { padding: 5px; background: #f5f5f5; border: 1px solid #e0e0e0 }\n  "}}]);
-//# sourceMappingURL=fluent-form-basic-step-by-step-form-index-story-mdx.ed647cba.iframe.bundle.js.map
+//# sourceMappingURL=fluent-form-basic-step-by-step-form-index-story-mdx.ae57bfab.iframe.bundle.js.map
