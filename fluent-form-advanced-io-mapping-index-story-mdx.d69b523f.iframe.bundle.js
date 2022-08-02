@@ -15,9 +15,9 @@
   })
   export class Component {
     schemas = form(
-      text('text').label('文本').span(6),
-      number('number').label('数字').span(3).max(100),
-      date('date').label('日期').span(6)
+      text('text').label('文本'),
+      number('number').label('数字').max(100),
+      date('date').label('日期')
     );
 
     model = {
@@ -45,4 +45,4 @@
     model = { date: '2022/2/22' };
   }
 `;function _createMdxContent(props){const _components=Object.assign({h1:"h1",p:"p",code:"code",strong:"strong",blockquote:"blockquote"},(0,dist_esm.ah)(),props.components);return(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(0,jsx_runtime.jsx)(esm.h_,{title:"FluentForm/Advanced",component:fluent_form.$y.component,decorators:fluent_form.$y.decorators,argTypes:fluent_form.$y.argTypes,parameters:fluent_form.$y.parameters}),"\n",(0,jsx_runtime.jsx)(_components.h1,{children:"I/O Mapping - 输入/输出映射"}),"\n",(0,jsx_runtime.jsxs)(_components.p,{children:["对于需要双向映射的值，可以使用 ",(0,jsx_runtime.jsx)(_components.code,{children:"mapper"})," 选项。"]}),"\n",(0,jsx_runtime.jsxs)(_components.p,{children:["例如日期控件期望",(0,jsx_runtime.jsx)(_components.strong,{children:"得到"}),"且将",(0,jsx_runtime.jsx)(_components.strong,{children:"输出"})," ",(0,jsx_runtime.jsx)(_components.code,{children:"Date"})," 对象，而我们期望从日期控件的",(0,jsx_runtime.jsx)(_components.strong,{children:"输出"}),"中",(0,jsx_runtime.jsx)(_components.strong,{children:"得到"}),"日期字符串："]}),"\n",(0,jsx_runtime.jsxs)(_components.blockquote,{children:["\n",(0,jsx_runtime.jsxs)(_components.p,{children:["注意：",(0,jsx_runtime.jsx)(_components.code,{children:"ngx-fluent-form"})," 默认会将日期控件输出的 ",(0,jsx_runtime.jsx)(_components.code,{children:"Date"})," 对象转为时间戳，要覆盖此行为，可以使用 ",(0,jsx_runtime.jsx)(_components.code,{children:"mapper"})," 选项。"]}),"\n"]}),"\n",(0,jsx_runtime.jsx)(esm.Xz,{withToolbar:!0,isExpanded:!0,mdxSource:source,children:(0,jsx_runtime.jsx)(esm.oG,{name:"I/O Mapping",children:story})})]})}function MDXContent(props={}){const{wrapper:MDXLayout}=Object.assign({},(0,dist_esm.ah)(),props.components);return MDXLayout?(0,jsx_runtime.jsx)(MDXLayout,Object.assign({},props,{children:(0,jsx_runtime.jsx)(_createMdxContent,props)})):_createMdxContent(props)}const iOMapping=(0,esm.Xb)(story);iOMapping.storyName="I/O Mapping",iOMapping.parameters={storySource:{source:"story"}};const componentMeta={title:"FluentForm/Advanced",parameters:fluent_form.$y.parameters,decorators:fluent_form.$y.decorators,component:fluent_form.$y.component,argTypes:fluent_form.$y.argTypes,includeStories:["iOMapping"]},mdxStoryNameToKey={"I/O Mapping":"iOMapping"};componentMeta.parameters=componentMeta.parameters||{},componentMeta.parameters.docs={...componentMeta.parameters.docs||{},page:()=>react.createElement(esm.aT,{mdxStoryNameToKey,mdxComponentAnnotations:componentMeta},react.createElement(MDXContent,null))};const index_story=componentMeta,__namedExportsOrder=["iOMapping"]},"./stories/fluent-form/index.ts.css?ngResource!=!./node_modules/@ngtools/webpack/src/loaders/inline-resource.js?data=CiAgICBwcmUgeyBwYWRkaW5nOiA1cHg7IGJhY2tncm91bmQ6ICNmNWY1ZjU7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTAgfQogIA%3D%3D!./stories/fluent-form/index.ts":module=>{module.exports="\n    pre { padding: 5px; background: #f5f5f5; border: 1px solid #e0e0e0 }\n  "}}]);
-//# sourceMappingURL=fluent-form-advanced-io-mapping-index-story-mdx.c886178b.iframe.bundle.js.map
+//# sourceMappingURL=fluent-form-advanced-io-mapping-index-story-mdx.d69b523f.iframe.bundle.js.map

@@ -15,9 +15,9 @@
   })
   export class Component {
     schemas = form(
-      text('text').label('文本').span(6),
-      number('number').label('数字').span(3).max(100),
-      date('date').label('日期').span(6)
+      text('text').label('文本'),
+      number('number').label('数字').max(100),
+      date('date').label('日期')
     );
 
     model = {
@@ -54,4 +54,4 @@
     model = {};
   }
 `;function _createMdxContent(props){const _components=Object.assign({h1:"h1",p:"p",a:"a",code:"code"},(0,dist_esm.ah)(),props.components);return(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(0,jsx_runtime.jsx)(esm.h_,{title:"FluentForm/Basic",component:fluent_form.$y.component,decorators:fluent_form.$y.decorators,argTypes:fluent_form.$y.argTypes,parameters:fluent_form.$y.parameters}),"\n",(0,jsx_runtime.jsx)(_components.h1,{children:"Grid Layout - 栅格布局"}),"\n",(0,jsx_runtime.jsxs)(_components.p,{children:["表单布局基于",(0,jsx_runtime.jsx)(_components.a,{href:"https://ng.ant.design/components/grid/zh",children:"栅格布局"}),"，表单内的每一个组件都是 ",(0,jsx_runtime.jsx)(_components.code,{children:"Grid"})," 中的一个 ",(0,jsx_runtime.jsx)(_components.code,{children:"Col"}),"，可以使用 ",(0,jsx_runtime.jsx)(_components.code,{children:"flex"}),"、",(0,jsx_runtime.jsx)(_components.code,{children:"offset"}),"、",(0,jsx_runtime.jsx)(_components.code,{children:"span"})," 选项来配置 ",(0,jsx_runtime.jsx)(_components.code,{children:"Col"}),"。"]}),"\n",(0,jsx_runtime.jsx)(esm.Xz,{withToolbar:!0,isExpanded:!0,mdxSource:source,children:(0,jsx_runtime.jsx)(esm.oG,{name:"Grid Layout",children:story})}),"\n",(0,jsx_runtime.jsx)(esm.$4,{of:src.gA})]})}function MDXContent(props={}){const{wrapper:MDXLayout}=Object.assign({},(0,dist_esm.ah)(),props.components);return MDXLayout?(0,jsx_runtime.jsx)(MDXLayout,Object.assign({},props,{children:(0,jsx_runtime.jsx)(_createMdxContent,props)})):_createMdxContent(props)}const gridLayout=(0,esm.Xb)(story);gridLayout.storyName="Grid Layout",gridLayout.parameters={storySource:{source:"story"}};const componentMeta={title:"FluentForm/Basic",parameters:fluent_form.$y.parameters,decorators:fluent_form.$y.decorators,component:fluent_form.$y.component,argTypes:fluent_form.$y.argTypes,includeStories:["gridLayout"]},mdxStoryNameToKey={"Grid Layout":"gridLayout"};componentMeta.parameters=componentMeta.parameters||{},componentMeta.parameters.docs={...componentMeta.parameters.docs||{},page:()=>react.createElement(esm.aT,{mdxStoryNameToKey,mdxComponentAnnotations:componentMeta},react.createElement(MDXContent,null))};const index_story=componentMeta,__namedExportsOrder=["gridLayout"]},"./stories/fluent-form/index.ts.css?ngResource!=!./node_modules/@ngtools/webpack/src/loaders/inline-resource.js?data=CiAgICBwcmUgeyBwYWRkaW5nOiA1cHg7IGJhY2tncm91bmQ6ICNmNWY1ZjU7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTAgfQogIA%3D%3D!./stories/fluent-form/index.ts":module=>{module.exports="\n    pre { padding: 5px; background: #f5f5f5; border: 1px solid #e0e0e0 }\n  "}}]);
-//# sourceMappingURL=fluent-form-basic-grid-layout-index-story-mdx.6cb71ff1.iframe.bundle.js.map
+//# sourceMappingURL=fluent-form-basic-grid-layout-index-story-mdx.c79309e5.iframe.bundle.js.map

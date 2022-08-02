@@ -15,9 +15,9 @@
   })
   export class Component {
     schemas = form(
-      text('text').label('文本').span(6),
-      number('number').label('数字').span(3).max(100),
-      date('date').label('日期').span(6)
+      text('text').label('文本'),
+      number('number').label('数字').max(100),
+      date('date').label('日期')
     );
 
     model = {
@@ -42,4 +42,4 @@
     model = {};
   }
 `;function _createMdxContent(props){const _components=Object.assign({h1:"h1",p:"p",code:"code",strong:"strong"},(0,dist_esm.ah)(),props.components);return(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(0,jsx_runtime.jsx)(esm.h_,{title:"FluentForm/Advanced",component:fluent_form.$y.component,decorators:fluent_form.$y.decorators,argTypes:fluent_form.$y.argTypes,parameters:fluent_form.$y.parameters}),"\n",(0,jsx_runtime.jsx)(_components.h1,{children:"Double Property - 双字段映射"}),"\n",(0,jsx_runtime.jsxs)(_components.p,{children:["对于区间选择控件，例如 ",(0,jsx_runtime.jsx)(_components.code,{children:"range"})," 控件，它将输出一个包含",(0,jsx_runtime.jsx)(_components.strong,{children:"两个元素"}),"的数组，你可能期望将数组里的这",(0,jsx_runtime.jsx)(_components.strong,{children:"两个元素"}),"分别映射到模型里的",(0,jsx_runtime.jsx)(_components.strong,{children:"两个属性"}),"："]}),"\n",(0,jsx_runtime.jsx)(esm.Xz,{withToolbar:!0,isExpanded:!0,mdxSource:source,children:(0,jsx_runtime.jsx)(esm.oG,{name:"Double Property",children:story})})]})}function MDXContent(props={}){const{wrapper:MDXLayout}=Object.assign({},(0,dist_esm.ah)(),props.components);return MDXLayout?(0,jsx_runtime.jsx)(MDXLayout,Object.assign({},props,{children:(0,jsx_runtime.jsx)(_createMdxContent,props)})):_createMdxContent(props)}const doubleProperty=(0,esm.Xb)(story);doubleProperty.storyName="Double Property",doubleProperty.parameters={storySource:{source:"story"}};const componentMeta={title:"FluentForm/Advanced",parameters:fluent_form.$y.parameters,decorators:fluent_form.$y.decorators,component:fluent_form.$y.component,argTypes:fluent_form.$y.argTypes,includeStories:["doubleProperty"]},mdxStoryNameToKey={"Double Property":"doubleProperty"};componentMeta.parameters=componentMeta.parameters||{},componentMeta.parameters.docs={...componentMeta.parameters.docs||{},page:()=>react.createElement(esm.aT,{mdxStoryNameToKey,mdxComponentAnnotations:componentMeta},react.createElement(MDXContent,null))};const index_story=componentMeta,__namedExportsOrder=["doubleProperty"]},"./stories/fluent-form/index.ts.css?ngResource!=!./node_modules/@ngtools/webpack/src/loaders/inline-resource.js?data=CiAgICBwcmUgeyBwYWRkaW5nOiA1cHg7IGJhY2tncm91bmQ6ICNmNWY1ZjU7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTAgfQogIA%3D%3D!./stories/fluent-form/index.ts":module=>{module.exports="\n    pre { padding: 5px; background: #f5f5f5; border: 1px solid #e0e0e0 }\n  "}}]);
-//# sourceMappingURL=fluent-form-advanced-double-property-index-story-mdx.3d2b093a.iframe.bundle.js.map
+//# sourceMappingURL=fluent-form-advanced-double-property-index-story-mdx.860eb83f.iframe.bundle.js.map
