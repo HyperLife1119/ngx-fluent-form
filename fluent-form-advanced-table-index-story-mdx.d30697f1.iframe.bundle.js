@@ -42,7 +42,7 @@
     \`
   })
   export class ExampleComponent {
-    schemas: form(
+    schemas = form(
       input('name'),
       number('age'),
       textarea('address'),
@@ -80,4 +80,4 @@
     ];
   }
 `;function _createMdxContent(props){const _components=Object.assign({h1:"h1",p:"p",code:"code"},(0,dist_esm.ah)(),props.components);return(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[(0,jsx_runtime.jsx)(esm.h_,{title:"FluentForm/Advanced",component:meta.component,decorators:meta.decorators,argTypes:meta.argTypes,parameters:meta.parameters}),"\n",(0,jsx_runtime.jsx)(_components.h1,{children:"Form in Table - 表格中的表单（Experimental）"}),"\n",(0,jsx_runtime.jsx)(_components.p,{children:"有时候为了便于修改表格中的数据，会将表单放置在表格行中；"}),"\n",(0,jsx_runtime.jsxs)(_components.p,{children:["鉴于表格的复杂性与灵活性，",(0,jsx_runtime.jsx)(_components.code,{children:"ngx-fluent-form"})," 没有对表格进行封装，而是提供了一组指令，开发者可以借助这些指令创建自定义布局："]}),"\n",(0,jsx_runtime.jsx)(esm.Xz,{withToolbar:!0,mdxSource:source,children:(0,jsx_runtime.jsx)(esm.oG,{name:"Form in Table",children:story})})]})}function MDXContent(props={}){const{wrapper:MDXLayout}=Object.assign({},(0,dist_esm.ah)(),props.components);return MDXLayout?(0,jsx_runtime.jsx)(MDXLayout,Object.assign({},props,{children:(0,jsx_runtime.jsx)(_createMdxContent,props)})):_createMdxContent(props)}const formInTable=(0,esm.Xb)(story);formInTable.storyName="Form in Table",formInTable.parameters={storySource:{source:"story"}};const componentMeta={title:"FluentForm/Advanced",parameters:meta.parameters,decorators:meta.decorators,component:meta.component,argTypes:meta.argTypes,includeStories:["formInTable"]},mdxStoryNameToKey={"Form in Table":"formInTable"};componentMeta.parameters=componentMeta.parameters||{},componentMeta.parameters.docs={...componentMeta.parameters.docs||{},page:()=>react.createElement(esm.aT,{mdxStoryNameToKey,mdxComponentAnnotations:componentMeta},react.createElement(MDXContent,null))};const index_story=componentMeta,__namedExportsOrder=["formInTable"]},"./stories/fluent-form/advanced/table/index.ts.css?ngResource!=!./node_modules/@ngtools/webpack/src/loaders/inline-resource.js?data=CiAgICBwcmUgeyBwYWRkaW5nOiA1cHg7IGJhY2tncm91bmQ6ICNmNWY1ZjU7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTAgfQogIA%3D%3D!./stories/fluent-form/advanced/table/index.ts":module=>{module.exports="\n    pre { padding: 5px; background: #f5f5f5; border: 1px solid #e0e0e0 }\n  "}}]);
-//# sourceMappingURL=fluent-form-advanced-table-index-story-mdx.d89c2d2e.iframe.bundle.js.map
+//# sourceMappingURL=fluent-form-advanced-table-index-story-mdx.d30697f1.iframe.bundle.js.map
