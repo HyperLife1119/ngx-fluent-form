@@ -59,7 +59,8 @@ describe('SchemaUtil', () => {
     expect(schemaUtil.isComponentContainer({ kind: 'tab' })).toBeTrue();
     expect(schemaUtil.isComponent({ kind: 'text' })).toBeTrue();
     expect(schemaUtil.isComponentWrapper({ kind: 'button-group' })).toBeTrue();
-    expect(schemaUtil.isControlContainer({ kind: 'group' })).toBeTrue();
+    expect(schemaUtil.isControlGroup({ kind: 'group' })).toBeTrue();
+    expect(schemaUtil.isControlArray({ kind: 'array' })).toBeTrue();
     expect(schemaUtil.isControlWrapper({ kind: 'input-group' })).toBeTrue();
     expect(schemaUtil.isControl({ kind: 'input' })).toBeTrue();
     expect(schemaUtil.isNonControl({ kind: 'button' })).toBeTrue();

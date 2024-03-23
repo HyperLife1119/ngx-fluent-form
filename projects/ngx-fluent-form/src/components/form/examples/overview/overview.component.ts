@@ -1,6 +1,6 @@
 import { JsonPipe } from '@angular/common';
 import { Component } from '@angular/core';
-import { alert, button, buttonGroup, cascader, checkbox, checkboxGroup, date, dateRange, datetime, FluentFormComponent, FluentGridModule, form, heading4, headless, input, inputGroup, number, numberGroup, radioGroup, rate, row, select, slider, step, steps, tab, tabs, text, textarea, time, toggle, treeSelect } from 'ngx-fluent-form';
+import { alert, button, buttonGroup, cascader, checkbox, checkboxGroup, date, dateRange, datetime, FluentFormComponent, FluentGridModule, form, group, heading4, headless, input, inputGroup, number, numberGroup, radioGroup, rate, row, select, slider, step, steps, tab, tabs, tabsArray, text, textarea, time, toggle, treeSelect } from 'ngx-fluent-form';
 import { map, switchMap, timer } from 'rxjs';
 import { AUTOCOMPLETE_OPTIONS, AUTOCOMPLETE_STRINGS, CASCADER_OPTIONS, CHECKBOX_OPTIONS, RADIO_OPTIONS, SELECT_OPTIONS, TREE_SELECT_OPTIONS } from './options';
 
@@ -113,7 +113,25 @@ export class OverviewExampleComponent {
       date('dateInRow').label('居左').col(6);
       dateRange('dateRangeInRow').label('居右').col(4);
     });
+    tabsArray('passengers')
+      .label('乘客')
+      .length({ min: 1, max: 5 })
+      .orderable(true)
+      .col(12)
+      .schemas(() => {
+        group().schemas(() => {
+          input('name').label('姓名').placeholder('请输入姓名').col(12);
+          input('cellphone').label('电话').placeholder('请输入电话').col(12);
+        });
+      });
   });
 
-  model = {};
+  model = {
+    passengers: [
+      {
+        name: '小明',
+        cellphone: '12345678901'
+      }
+    ]
+  };
 }
