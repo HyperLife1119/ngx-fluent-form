@@ -1,0 +1,46 @@
+<ng-template let-formArray="control" let-formSchema="schema" let-model="model" [fluentContextGuard]="contextGuard">
+  <nz-tabset
+    #component
+    nzType="editable-card"
+    [fluentBinding]="{ component, schema: formSchema, control: formArray, model }"
+    [ngClass]="formSchema.class"
+    [ngStyle]="formSchema.style"
+    [nzSize]="formSchema.size ?? 'default'"
+    [nzTabPosition]="formSchema.position ?? 'top'"
+    [nzTabBarGutter]="formSchema.gutter"
+    [nzCentered]="formSchema.centered"
+    [hidden]="formSchema.hidden | reactive: model : formSchema : formArray"
+    (nzAdd)="push(formArray, formSchema)"
+    (nzClose)="formArray.removeAt($event.index)">
+    <!-- TODO 控制添加按钮显示 -->
+    <nz-tab
+      *ngFor="let control of formArray.controls; index as index"
+      [nzClosable]="formArray.length >= (helper.length.min | invoke: formSchema.length)"
+      [nzTitle]="(index + 1 + '').padStart(2, '0')">
+      <fluent-row #parentRow="fluentParentRow" [gap]="parentRow.gap">
+        <ng-template #formColTemplate let-schema="schema" let-control="control" let-model="model">
+          <fluent-col
+            [span]="schema.col | col: 'span'"
+            [flex]="schema.col | col: 'flex'"
+            [offset]="schema.col | col: 'offset'"
+            [hidden]="schema.hidden | reactive: model : schema : control"
+            [control]="control"
+            [schema]="schema"
+            [model]="model">
+          </fluent-col>
+        </ng-template>
+
+        <ng-container
+          *ngFor="let subschema of formSchema.schemas"
+          [ngTemplateOutlet]="formColTemplate"
+          [ngTemplateOutletContext]="{
+            control: control,
+            schema: withIndex(index, subschema),
+            model: model[formSchema.key!],
+            index: index
+          }">
+        </ng-container>
+      </fluent-row>
+    </nz-tab>
+  </nz-tabset>
+</ng-template>

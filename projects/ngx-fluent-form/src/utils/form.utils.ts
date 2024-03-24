@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { AbstractControl, AbstractControlOptions, FormArray, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 import { AnyArray, AnyObject, SafeAny } from '@ngify/types';
-import { FormArraySchema, FormGroupSchema, SchemaKey } from '../schemas';
+import { AbstractControlContainerSchema, FormArraySchema, FormGroupSchema, SchemaKey } from '../schemas';
 import { AnyControlContainerSchema, AnyControlSchema, AnySchema } from '../schemas/index.schema';
 import { SchemaKind } from '../schemas/interfaces';
 import { ValueTransformer } from '../services';
@@ -32,10 +32,10 @@ export class FormUtil {
     });
   }
 
-  createFormGroup(schema: FormGroupSchema, model: AnyObject): FormGroup;
+  createFormGroup(schema: AbstractControlContainerSchema, model: AnyObject): FormGroup;
   createFormGroup(schemas: AnySchema[], model: AnyObject): FormGroup;
-  createFormGroup(schemaOrSchemas: FormGroupSchema | AnySchema[], model: AnyObject): FormGroup;
-  createFormGroup(schemaOrSchemas: FormGroupSchema | AnySchema[], model: AnyObject): FormGroup {
+  createFormGroup(schemaOrSchemas: AbstractControlContainerSchema | AnySchema[], model: AnyObject): FormGroup;
+  createFormGroup(schemaOrSchemas: AbstractControlContainerSchema | AnySchema[], model: AnyObject): FormGroup {
     let schemas: AnySchema[];
     let options: AbstractControlOptions = {};
 
@@ -62,10 +62,10 @@ export class FormUtil {
         return controls;
       }
 
-      if (schema.kind === SchemaKind.Group) {
+      if (this.schemaUtil.isControlGroup(schema)) {
         const key = schema.key!.toString();
         controls[key] = this.createFormGroup(schema, model[key] ?? {});
-      } else if (schema.kind === SchemaKind.Array) {
+      } else if (this.schemaUtil.isControlArray(schema)) {
         const key = schema.key!.toString();
         controls[key] = this.createFormArray(schema, model[key] ?? []);
       } else if (this.schemaUtil.isControlWrapper(schema) || this.schemaUtil.isComponentContainer(schema)) {
@@ -94,7 +94,7 @@ export class FormUtil {
     }, {} as Record<string, AbstractControl>);
   }
 
-  createFormArray(schema: FormArraySchema, model: AnyArray): FormArray {
+  createFormArray(schema: AbstractControlContainerSchema, model: AnyArray): FormArray {
     const controls = this.createFormArrayElements(schema.schemas, model);
 
     return new FormArray<SafeAny>(controls, {
@@ -147,7 +147,7 @@ export class FormUtil {
       // 这些图示不包含控件图示，直接跳过
       if (this.schemaUtil.isNonControl(schema)) continue;
 
-      if (schema.kind === SchemaKind.Group) {
+      if (this.schemaUtil.isControlGroup(schema)) {
         const key = schema.key!;
         const formGroup = getChildControl(form, key) as FormGroup;
 
@@ -155,7 +155,7 @@ export class FormUtil {
         continue;
       }
 
-      if (schema.kind === SchemaKind.Array) {
+      if (this.schemaUtil.isControlArray(schema)) {
         const key = schema.key!;
         const formArray = getChildControl(form, key) as FormArray;
         const [elementSchema] = this.schemaUtil.filterControls(schema.schemas);
@@ -206,7 +206,7 @@ export class FormUtil {
       // 这些图示不包含控件图示，直接跳过
       if (this.schemaUtil.isNonControl(schema)) continue;
 
-      if (schema.kind === SchemaKind.Group) {
+      if (this.schemaUtil.isControlGroup(schema)) {
         const key = schema.key!;
         const formGroup = getChildControl(form, key) as FormGroup;
 
@@ -214,7 +214,7 @@ export class FormUtil {
         continue;
       }
 
-      if (schema.kind === SchemaKind.Array) {
+      if (this.schemaUtil.isControlArray(schema)) {
         const key = schema.key!;
         const formArray = getChildControl(form, key) as FormArray;
         const [elementSchema] = this.schemaUtil.filterControls(schema.schemas);
